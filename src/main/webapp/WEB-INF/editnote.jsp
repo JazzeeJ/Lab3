@@ -17,10 +17,10 @@
         <h1>Edit Note</h1>
         <form action="note" method="post">
             <label for="title">Title: </label>
-            <input type="text" name="title" id="title" placeholder="This is the title" >
+            <input type="text" name="title" id="title" placeholder="This is the title" value="${note.title}" >
             <br>
             <label for="contents">Contents: </label>
-            <textarea name="contents" id="contents" placeholder="Contents go here" rows="7" cols="25" ></textarea>            
+            <textarea name="contents" id="contents" placeholder="Contents go here" rows="7" cols="25" value="${note.contents}" ></textarea>            
             <br>
             <button type="submit">Save</button>
         </form>
