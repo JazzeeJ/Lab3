@@ -9,10 +9,19 @@ import java.io.Serializable;
 public class Note implements Serializable {
     private String title;
     private String contents;
-    
+        
     public Note() {
         this.title = "";
         this.contents = "";
+    }
+    /**
+     * User defined constructor
+     * @param title
+     * @param contents 
+     */
+    public Note(String title, String contents) {
+        this.title = title;
+        this.contents = contents;
     }
 
     public String getTitle() {

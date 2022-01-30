@@ -10,13 +10,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>View Note</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
+        <h1 class="titlefont">Simple Note Keeper</h1>
         <h1>View Note</h1>
         
-        <p>Title: </p>
-        <p>Contents: </p>
+        <p><strong>Title:</strong> ${note.title}</p>
+        <p><strong>Contents:</strong> 
+            <br>${note.contents}</p>
         
-        <a href="#">Edit</a>
+        <a href="note?edit=true">Edit</a>
     </body>
 </html>
